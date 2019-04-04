@@ -1,17 +1,19 @@
 package com.example.mobile_task_1_2_clicker;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextClock;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView mainText;
-    Button plusBtn;
-    Button minBtn;
+    ImageButton plusBtn;
+    ImageButton minBtn;
     Button resBtn;
 
     private long score = 0;
@@ -22,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mainText = (TextView) findViewById(R.id.mainText);
-        plusBtn = (Button) findViewById(R.id.plus_btn);
-        minBtn = (Button) findViewById(R.id.min_btn);
+        plusBtn = (ImageButton) findViewById(R.id.plus_btn);
+        minBtn = (ImageButton) findViewById(R.id.min_btn);
         resBtn = (Button) findViewById(R.id.buttonReset);
 
 
